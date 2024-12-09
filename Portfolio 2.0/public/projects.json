@@ -1,0 +1,203 @@
+[
+    {
+        "id": 1,
+        "title": "Zen Garden",
+        "category": "Webpage",
+        "description": "My spin on the popular CSS demonstration site for developers",
+        "tools": [
+            "CSS"
+        ],
+        "pics": [
+            {
+                "img": "./projects/zen-1.png",
+                "label": "Zen Garden",
+                "caption": "spinning Dharma Wheel animation"
+            },
+            {
+                "img": "./projects/zen-menu.png",
+                "label": "Zen Menu",
+                "caption": "Side bar pops out from the side on hover"
+            },
+            {
+                "img": "./projects/zen-animate.png",
+                "label": "Zen Transitions",
+                "caption": "The content comes into focus when you hover"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "BlackJack",
+        "category": "Card Game",
+        "description": "A Vegas-style Blackjack game with gambling",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "pics": [
+            {
+                "img": "./projects/blackJack.png",
+                "label": "Classic Look",
+                "caption": "Just head to head betting against the dealer"
+            },
+            {
+                "img": "./projects/bJ-21.png",
+                "label": "BlackJack!",
+                "caption": "Double your winnings with a BlackJack!"
+            },
+            {
+                "img": "./projects/bJ-win.png",
+                "label": "You win",
+                "caption": "Pile up the money the more you win"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Jeopardy",
+        "category": "Trivia Game",
+        "description": "Based off the hit tv trivia game, with a programming twist",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "pics": [
+            {
+                "img": "./projects/jeopardy-select.png",
+                "label": "This Is Jeopardy!",
+                "caption": "Inspired by the real thing"
+            },
+            {
+                "img": "./projects/jeopardy-q.png",
+                "label": "Answer in the form of a question...",
+                "caption": "Topics on Front End Development and Design"
+            },
+            {
+                "img": "./projects/jeopardy-playing.png",
+                "label": "Who will win?",
+                "caption": "Challenge your friends to see who has what it takes to be the champion"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "DummyCookbook",
+        "category": "Website",
+        "description": "DummyJson.com recipes site complete with filters and searching capabilities",
+        "tools": [
+            "Bootstrap",
+            "CSS",
+            "JavaScript",
+            "React",
+            "React Router"
+        ],
+        "pics": [
+            {
+                "img": "./projects/dummy-home.png",
+                "label": "Inviting",
+                "caption": "An warm, minimalistic style"
+            },
+            {
+                "img": "./projects/dummy-recipe.png",
+                "label": "Delicious",
+                "caption": "A large collection of recipes for the food explorer in you"
+            },
+            {
+                "img": "./projects/dummy-search.png",
+                "label": "Searching...",
+                "caption": "Find what your looking for with a custom built search engine"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Rock Paper Scissors Lizard Spock",
+        "category": "Arcade Game",
+        "description": "The classic ro-sham-bo with added choices from the Big Bang Theory tv show",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React"
+        ],
+        "pics": [
+            {
+                "img": "./projects/rps-main.png",
+                "label": "Choose your weapon",
+                "caption": "Rock, Paper, Scissors, Lizard, Spock"
+            },
+            {
+                "img": "./projects/rps-rules.png",
+                "label": "Rules Map",
+                "caption": "The rules have a modal state"
+            },
+            {
+                "img": "./projects/rps-win.png",
+                "label": "Winner!",
+                "caption": "Try to beat your high score"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "S Mart",
+        "category": "E-Commerce",
+        "description": "An 'Evil Dead' themed e-commerce website using DummyJson.com data",
+        "tools": [
+            "Bootstrap",
+            "CSS",
+            "JavaScript",
+            "React",
+            "React Router"
+        ],
+        "pics": [
+            {
+                "img": "./projects/s-mart-home.png",
+                "label": "Shop smart, shop S-Mart!",
+                "caption": "Our employee of the month is Ash, himself"
+            },
+            {
+                "img": "./projects/s-mart-today.png",
+                "label": "Daily Deals",
+                "caption": "The discounts change every day"
+            },
+            {
+                "img": "./projects/s-mart-cart.png",
+                "label": "Checkout",
+                "caption": "Check out the surprise at checkout"
+            }
+        ]
+    },
+     {
+        "id": 7,
+        "title": "ReacTrivia",
+        "category": "Trivia Game",
+        "description": "Inspired by the award winning game series \"You Don't Know Jack\", this colorful and fun trivia game will keep you guessing.",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "React Router"
+        ],
+        "pics": [
+            {
+                "img": "./projects/reacTrivia-categories.png",
+                "label": "Choose your category",
+                "caption": "Over 30 'punny' categories to keep the player on their toes and invested in the game."
+            },
+            {
+                "img": "./projects/reacTrivia-question.png",
+                "label": "Multiple choice",
+                "caption": "Pick the right answer quickly to gain the most points possible."
+            },
+            {
+                "img": "./projects/reacTrivia-finale.png",
+                "label": "Finale",
+                "caption": "The final round is a fill-in-the-blank code snippet to truly test your coding knowledge."
+            }
+        ]
+    }
+]

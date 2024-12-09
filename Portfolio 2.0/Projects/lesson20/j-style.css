@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(240, 208, 120);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+    background-color: rgb(80, 32, 4);
+    color:rgb(240, 208, 120);
+    margin-bottom: 2rem;
+    text-shadow: 2px 3px 2px rgba(160, 135, 22, 0.911);
+    box-shadow:5px 5px 5px rgb(49, 46, 44);
+}
+
+tbody {
+    background-color: rgb(40, 170, 170);
+}
+
+a {
+    font-size: 2rem;
+    color: rgb(240, 208, 120);
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(160, 135, 22, 0.911);
+}
+
+td {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    width: 5rem;
+    height: 4rem;
+    box-shadow: 0 2px 2px rgb(49, 46, 44), inset 0 2px 2px rgb(5, 211, 211);
+}
+
+#results {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(240, 208, 120);
+    min-height: 5rem;
+}
+
+.contain {
+    max-width: fit-content;
+    margin: auto;
+    background-color: rgb(112, 49, 12);
+    padding: 1rem;
+    box-shadow:0 5px 5px rgb(49, 46, 44), inset 0 5px 5px rgb(160, 60, 2);
+}
+
+td:has(a:active) {
+    box-shadow: inset 0 2px 2px rgb(49, 46, 44), 0 2px 2px rgb(5, 211, 211);
+}

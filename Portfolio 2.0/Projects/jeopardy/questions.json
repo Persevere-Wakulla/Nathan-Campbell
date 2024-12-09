@@ -1,0 +1,289 @@
+[
+    {
+        "round1": [
+            {
+                "name": "HTML",
+                "qA": [
+                    {
+                        "q": "A segment of code surrounded by 'angle brackets' and usually has an opening and closing pair",
+                        "a": "element"
+                    },
+                    {
+                        "q": "An addition to an element to supply more information, usually followed by an equal sign and a value",
+                        "a": "attribute"
+                    },
+                    {
+                        "q": "A line of code only viewable through the Developer's Tools as a form of communication between developers",
+                        "a": "comment"
+                    },
+                    {
+                        "q": "A newer system of organization using specific names for the areas of a page",
+                        "a": "semantics"
+                    },
+                    {
+                        "q": "The information displayed on a website found between the opening and closing tags of an element",
+                        "a": "content"
+                    }
+                ]
+            },
+            {
+                "name":"CSS",
+                "qA": [
+                    {
+                        "q": "How developers target an element through CSS, the thing being styled",
+                        "a": "selector"
+                    },
+                    {
+                        "q": "Consists of: content, padding, borders, and margins",
+                        "a": "box model"
+                    },
+                    {
+                        "q": "Responsive design requires this to change screen sizes",
+                        "a": "media query"
+                    },
+                    {
+                        "q": "The type of change being made to the element",
+                        "a": "property"
+                    },
+                    {
+                        "q": "What developers connect to an html document to add CSS to their website",
+                        "a": "stylesheet"
+                    }
+                ]
+            },
+            {
+                "name":"ElemOrAtt",
+                "qA": [
+                    {
+                        "q": "An attribute used in styling multiple elements at once",
+                        "a": "class"
+                    },
+                    {
+                        "q": "The html element where nearly all code exists",
+                        "a": "body"
+                    },
+                    {
+                        "q": "The tag that usually contains a hyperlink (word not the abbreviation)",
+                        "a": "anchor"
+                    },
+                    {
+                        "q": "A tag where users can give a form information",
+                        "a": "input"
+                    },
+                    {
+                        "q": "An attribute used in targeting a specific element on a webpage",
+                        "a": "id"
+                    }
+                ]
+            },
+            {
+                
+                "name":"Properties",
+                "qA": [
+                    {
+                        "q": "Specifies how an element is shown on a page",
+                        "a": "display"
+                    },
+                    {
+                        "q": "Can be static, relative, fixed, absolute, or sticky",
+                        "a": "position"
+                    },
+                    {
+                        "q": "Creates space around content within a border",
+                        "a": "padding"
+                    },
+                    {
+                        "q": "The property that defines the styling of the letters displayed (kabob-case)",
+                        "a": "font-family"
+                    },
+                    {
+                        "q": "Allows an element to move, rotate, scale, and skew",
+                        "a": "transform"
+                    }
+                ]
+            },
+            {
+                
+                "name":"FlexGrid",
+                "qA": [
+                    {
+                        "q": "An easier way to design a flexible responsive layout structure",
+                        "a": "flexbox"
+                    },
+                    {
+                        "q": "Can be defined as either a column or a row (kabob-case)",
+                        "a": "flex-direction"
+                    },
+                    {
+                        "q": "A layout system using both rows and columns",
+                        "a": "grid"
+                    },
+                    {
+                        "q": "A property used to align all elements horizontally (kabob-case)",
+                        "a": "justify-content"
+                    },
+                    {
+                        "q": "Property used to space elements apart within a Grid or Flex container",
+                        "a": "gap"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "round2": [
+            {
+                
+                "name":"JavaScript",
+                "qA": [
+                    {
+                        "q": "The HTML tag used to implement JavaScript on a webpage",
+                        "a": "script"
+                    },
+                    {
+                        "q": "A container used for storing data, can be local or global",
+                        "a": "variable"
+                    },
+                    {
+                        "q": "A name for a group of symbols used to perform mathematical and logical computations",
+                        "a": "operators"
+                    },
+                    {
+                        "q": "A tool commonly used to inform the developer of errors",
+                        "a": "console"
+                    },
+                    {
+                        "q": "An arithmetic operator used to find a remainder (word, not symbol)",
+                        "a": "modulus"
+                    }
+                ]
+            },
+            {
+                
+                "name":"DataTypes",
+                "qA": [
+                    {
+                        "q": "The datatype that refers to an arrangement of characters, or a word",
+                        "a": "string"
+                    },
+                    {
+                        "q": "True or false",
+                        "a": "boolean"
+                    },
+                    {
+                        "q": "A datatype used to define an empty value, or 'nothing'",
+                        "a": "null"
+                    },
+                    {
+                        "q": "The datatype consisting of a list of other datatypes",
+                        "a": "array"
+                    },
+                    {
+                        "q": "A datatype that includes properties and values",
+                        "a": "object"
+                    }
+                ]
+            },
+            {
+                
+                "name":"Functions",
+                "qA": [
+                    {
+                        "q": "Things listed in parentheses to behave like local variables inside a function",
+                        "a": "parameters"
+                    },
+                    {
+                        "q": "Items passed into and used by a function in its operations",
+                        "a": "arguments"
+                    },
+                    {
+                        "q": "A function that uses a callback function as a parameter",
+                        "a": "higher order function"
+                    },
+                    {
+                        "q": "A statement used to repeat a function multiple times",
+                        "a": "loop"
+                    },
+                    {
+                        "q": "A statement used to get a value back from a function, it will stop execution of the function",
+                        "a": "return"
+                    }
+                ]
+            },
+            {
+             "name" : "Methods",
+             "qA":  [
+                    {
+                        "q": "extracts a section of a string, but cannot take negatives",
+                        "a": "substring"
+                    },
+                    {
+                        "q": "Combines two of the same datatype together",
+                        "a": "concat"
+                    },
+                    {
+                        "q": "Asks if an element is present within an array or string",
+                        "a": "includes"
+                    },
+                    {
+                        "q": "Searches for a value and returns its position within a string or array (camelCase)",
+                        "a": "indexOf"
+                    },
+                    {
+                        "q": "Removes the last entry in an array",
+                        "a": "pop"
+                    }
+                ]
+            },
+            {
+                "name": "DOM",
+                "qA": [
+                    {
+                        "q": "Finds an element by its ID",
+                        "a": "getElementById"
+                    },
+                    {
+                        "q": "Finds all elements containing the called value",
+                        "a": "querySelectorAll"
+                    },
+                    {
+                        "q": "Makes a new HTML element",
+                        "a": "createElement"
+                    },
+                    {
+                        "q": "Adds an HTML element to page dynamically",
+                        "a": "append"
+                    },
+                    {
+                        "q": "Causes an element to perform a function when interacted with by a user",
+                        "a": "addEventListener"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "final": [
+            {
+                "q": "How JavaScript grabs information from a database",
+                "a": "fetch"
+            },
+            {
+                "q": "A CSS property used to give a page the appearance of depth",
+                "a": "box-shadow"
+            },
+            {
+                "q": "The higher order function used to change the values of items",
+                "a": "map"
+            },
+            {
+                "q": "A common layout used in web design with a header, aside, main, and footer",
+                "a": "holy grail"
+            },
+            {
+                "q": "This determines the accessibilty of variables",
+                "a": "scope"
+            }
+        ]
+    }
+]

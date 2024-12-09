@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: rgb(250, 245, 245);
+    --main-box: rgba(238, 232, 214, 0.709);
+    --hover: rgb(219, 132, 11);
+    --card: rgb(249, 160, 35);
+    --title: rgb(95, 12, 4);
+    --border: rgb(159, 3, 3);
+}
+
+body {
+    height: 100vh;
+    background-image: url('../public/pexels-pixabay-326240.jpg');
+    background-size: 220px;
+    background-repeat: repeat;
+}
+
+main {
+    background-color: var(--main-box);
+}
+
+header {
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+}
+
+.hover>a:hover {
+    color: var(--hover);
+}
+
+.navi {
+    background-color: var(--background);
+}
+
+.recipe {
+    background-color: var(--card);
+    border: 2px solid var(--border);
+    box-shadow: 0 3px 5px; 
+}
+
+.card-img-top{
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    box-shadow: 0 3px 5px black;
+}
+
+.card-title{
+    color: var(--title)
+}

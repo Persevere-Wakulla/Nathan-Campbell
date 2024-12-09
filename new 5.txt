@@ -1,0 +1,3 @@
+single file can't be bigger than 50mb
+total folder cannot be 1gb
+no .git files

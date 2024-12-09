@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "title": "Procrastinating Style Sheets",
+        "directions": "List all the ways to add CSS to an HTML page with correct syntax without adding any styling of your own.",
+        "details": [
+            "<head>\n<meta charset=\"UTF-8\">\n<",
+            "_m_",
+            "href=\"styles.css\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>My Project</title>",
+            "_lg_",
+            "\n</head>\n\n<body>\n<h1",
+            "_sm_",
+            "\"color:blue\">Hello World</h1>"
+        ],
+        "answers": [
+            "link rel=\"stylesheet\"",
+            "<style></style>",
+            "style="
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Following a Higher Order",
+        "directions": "Complete the function to return one array ordered from greatest to least.",
+        "details": [
+            "const numbers = [[2,86,21],[7,56,34],[9,12,81]];\n\nfunction math() {\nconst sums = ",
+            "_sm_",
+            "\n((arr) => {\nreturn arr.reduce((total, currentValue) => {\nreturn",
+            "_m_",
+            ";\n},0)\n return sums.sort((a,b)=>",
+            "_sm_",
+            ")\n})"
+        ],
+        "answers": [
+            "numbers.map",
+            "total + currentValue",
+            "b - a"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "An eventful site",
+        "directions": "Name the correct event type for the listener.",
+        "details": [
+            "form.addEventListener\n('",
+            "_sm_",
+            "', handleForm);\ntextInput.addEventListener\n('",
+            "_sm_",
+            "', ()=>textInput.classList.add('highlight'));\nzoomPic.addEventListener\n('",
+            "_sm_",
+            "', handleZoom);"
+        ],
+        "answers": [
+            "submit",
+            "focus",
+            "click"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Al Gore Rhythm",
+        "directions": "The former US Vice President is travelling overseas, but first he has to exchange some money. Don't forget your receipt!",
+        "details": [
+            "function exchange(dollars){\nlet receipt = {};\nlet total = (",
+            "_m_",
+            " * 4.621); \nlet timestamp = new ",
+            "_lg_",
+            ";\nreceipt.money = total\n receipt.time = timestamp;\nlocalStorage.setItem('AlGore',",
+            "_m_",
+            "(receipt));\nreturn receipt\n}"
+        ],
+        "answers": [
+            "dollars",
+            "Date()",
+            "JSON.stringify"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "The Animation Proclamation",
+        "directions": "Fill in the blanks with the correct term so the animation can perform as it should.",
+        "details": [
+            "#animate {\ntransform:translate(-50px);\n",
+            "_sm_",
+            ": slide-over 2s linear;\n}\n\n@",
+            "_sm_",
+            "{\n100% {\ntransform:",
+            "_sm_",
+            "(100px)\n}\n}"
+        ],
+        "answers": [
+            "animation",
+            "keyframes",
+            "translate"
+        ]
+    }
+]

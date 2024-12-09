@@ -1,0 +1,225 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+:root {
+    /* colors */
+    --main-font: rgb(7, 3, 53);
+    --sec-font: rgb(74, 73, 82);
+    --background: rgb(98, 106, 116);
+    --container: rgb(211, 212, 230);
+    --inset: rgb(60, 53, 138);
+    --shadow: rgb(8, 2, 59);
+    --accent: #c03e25;
+    --acc-ins: #f1694e;
+    --cont-ins: rgb(232, 233, 238);
+
+    /* fonts */
+    --main-family: 'Segoe UI';
+    --sec-family: 'Trebuchet MS';
+    --large: 3rem;
+    --medium: 1.4rem;
+    --bold: 700;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--main-font);
+    font-family: var(--main-family);
+}
+
+/* header */
+.logo-box {
+    width: max-content;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: var(--large);
+    font-family: var(--sec-family);
+    color: var(--main-font);
+    text-shadow: 3px 3px 3px var(--sec-font);
+    background-color: var(--cont-ins);
+    padding: 0 1rem;
+    border-radius: var(--medium);
+    border-bottom: .5rem solid var(--main-font);
+    border-top: .5rem solid var(--accent);
+}
+
+/* accents color */
+.red, .log {
+    color: var(--accent);
+}
+
+.under-line {
+    border-bottom: 4px solid var(--accent);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    padding-left: .5rem;
+}
+
+/* nav links */
+li>a {
+    line-height: 1.5;
+    font-size: large;
+    color: var(--sec-font);
+    font-weight: 500;
+}
+
+li>a:hover {
+    background-color: var(--cont-ins);
+    color: var(--accent);
+}
+
+.badge {
+    background-color: var(--accent);
+    color: var(--cont-ins);
+}
+
+/* flex changes in media query */
+.mobile-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* page containers */
+section {
+    background-color: var(--container);
+    box-shadow: 0 5px 5px var(--shadow), inset 0 5px 5px var(--cont-ins);
+}
+
+/* slogan */
+.catchy {
+    border-bottom: 5px solid var(--accent)
+}
+
+/* quote */
+blockquote {
+    font-family: var(--sec-family);
+    color: var(--main-font);
+}
+
+/* help page */
+.faq-ul {
+    padding: 0 1rem;
+}
+
+/* faq '?' */
+.faq::marker {
+    white-space: pre-wrap;
+    content: '?';
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.faq {
+    line-height: 1.25;
+}
+
+.question {
+    text-decoration: underline;
+    line-height: .5;
+}
+
+/* buttons */
+.blue-btn {
+    background-color: var(--main-font);
+    color: var(--cont-ins);
+    box-shadow: 0 3px 3px var(--shadow), inset 0 3px 3px var(--inset);
+}
+
+.blue-btn:hover {
+    box-shadow: 0 3px 3px var(--shadow), inset 0 3px 3px var(--container);
+}
+
+.red-btn {
+    background-color: var(--accent);
+    box-shadow: 0 3px 3px var(--shadow), inset 0 3px 3px var(--acc-ins);
+    color: var(--cont-ins);
+}
+
+.red-btn:hover {
+    box-shadow: 0 3px 3px var(--shadow), inset 0 3px 3px var(--container);
+    color: var(--main-font);
+}
+
+.red-btn.active, .blue-btn.active {
+    box-shadow: 0 3px 3px var(--shadow), inset 0 3px 3px var(--container);
+}
+
+/* store */
+.store-layout {
+    display: flex;
+    gap: 1rem;
+}
+
+/* menu background */
+.backing {
+   background-color: rgba(98, 106, 116, 0.65);   
+}
+
+a.active:not(.logo) {
+    border-bottom: 3px solid var(--accent);
+}
+
+/* cards */
+.product-card {
+    width: 12rem;
+    max-height: 28rem;
+    background-color: var(--cont-ins);
+}
+
+.card-title {
+    color: var(--accent);
+}
+
+.img-container {
+    height: 50%;
+}
+
+.height {
+    height: 100%;
+}
+
+.cart-item {
+    background-color: var(--cont-ins);
+    border: 2px solid var(--main-font)
+}
+
+/* checkout */
+.game-box {
+    background-color: var(--background);
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* pictures */
+.pics {
+    height: 200px;
+}
+
+/* media */
+@media (max-width: 992px){
+    .mobile-flex{
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .store-layout {
+        display: block;
+    }
+}

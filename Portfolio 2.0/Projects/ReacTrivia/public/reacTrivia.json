@@ -1,0 +1,782 @@
+[
+    {
+        "id": 1,
+        "category": "Get to the data!",
+        "questions": [
+            {
+                "q": "Which hook is used to read the result of a fetch?",
+                "correct": "useLoaderData()",
+                "options": [
+                    "useOutletContext()",
+                    "useLoaderData()",
+                    "useDataLoader()",
+                    "useFetcher()"
+                ]
+            },
+            {
+                "q": "What object represents the eventual completion or failure of an asynchronous operation?",
+                "correct": "Promise",
+                "options": [
+                    "Request",
+                    "Worker",
+                    "Response",
+                    "Promise"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Attention Defecit Hypertext Disorder",
+        "questions": [
+            {
+                "q": "A major indicator of ADHD is having a cluttered desk; which element is prescribed Adderall?",
+                "correct": "<ul>",
+                "options": [
+                    "<span>",
+                    "<ol>",
+                    "<ul>",
+                    "<img>"
+                ]
+            },
+            {
+                "q": "One sign of possible ADHD is an unresistible urge to be the center of attention; which element is standing out from the crowd?",
+                "correct": "<pre>",
+                "options": [
+                    "<pre>",
+                    "<post>",
+                    "<label>",
+                    "<script>"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Does this font make me look fat?",
+        "questions": [
+            {
+                "q": "Which HTML tag indicates the content having higher importance?",
+                "correct": "<strong>",
+                "options": [
+                    "<strong>",
+                    "<i>",
+                    "<em>",
+                    "<imp>"
+                ]
+            },
+            {
+                "q": "What is the CSS property that controls the boldness",
+                "correct": "font-weight",
+                "options": [
+                    "font-size",
+                    "text-weight",
+                    "font-weight",
+                    "font-family"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "category": "Out of my element",
+        "questions": [
+            {
+                "q": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse atque sit corrupti sequi expedita. Quisquam.\n\n What am I missing?",
+                "correct":"closing tag",
+                "options": [
+                    "self-opening tag",
+                    "closing tag",
+                    "opening tag",
+                    "self-closing tag"
+                ]
+            },
+            {
+                "q": "Which CSS property handles space outside the border?",
+                "correct": "margin",
+                "options": [
+                    "padding",
+                    "width",
+                    "border-radius",
+                    "margin"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "category": "Smooth Operator",
+        "questions": [
+            {
+                "q": "This arithmetic operator returns the result of raising the first number by the power of the second.",
+                "correct": "**",
+                "options": [
+                    "**",
+                    "*",
+                    "=**",
+                    "**="
+                ]
+            },
+            {
+                "q": "How do we expand an iterable to make a copy or to add an element or new property?",
+                "correct": "spread",
+                "options": [
+                    "destructure",
+                    "initialize",
+                    "spread",
+                    "rest"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "category": "Don't overReact",
+        "questions": [
+            {
+                "q": "When your component is being created, this is called what?",
+                "correct": "rendering",
+                "options": [
+                    "mounting",
+                    "rendering",
+                    "updating",
+                    "unmounting"
+                ]
+            },
+            {
+                "q": "What is considered a reusable UI element for your app?",
+                "correct": "component",
+                "options": [
+                    "hook",
+                    "component",
+                    "route",
+                    "state"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "category": "All in the Family",
+        "questions": [
+            {
+                "q": "When a parent element's style is passed to its children, this is called...",
+                "correct": "inheritance",
+                "options": [
+                    "initialization",
+                    "cascading",
+                    "inheritance",
+                    "layering"
+                ]
+            },
+            {
+                "q": "What's the term used when one element has many descendants within it?",
+                "correct": "nesting",
+                "options": [
+                    "embedded",
+                    "sectioning",
+                    "semantics",
+                    "nesting"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "category": "Placement is a Virtue",
+        "questions": [
+            {
+                "q": "Declarative functions can do this, but Arrow functions cannot.",
+                "correct": "hoisting",
+                "options": [
+                    "hosting",
+                    "hoisting",
+                    "async",
+                    "export"
+                ]
+            },
+            {
+                "q": "The governor of order and structure in all programming languages",
+                "correct":"syntax",
+                "options": [
+                    "syntax",
+                    "EMCA",
+                    "W3C",
+                    "semantics"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "category": "They're lowering the property value!",
+        "questions": [
+            {
+                "q": "I need all the properties from an object in an array, what's the correct method?",
+                "correct": "Object.keys()",
+                "options": [
+                    "Object.defineProperties()",
+                    "Object.getOwnPropertyNames()",
+                    "Object.keys()",
+                    "Object.entries()"
+                ]
+            },
+            {
+                "q": "Which is the method to use when you want to know if something exists within an array?",
+                "correct": ".includes()",
+                "options": [
+                    ".with()",
+                    ".valueOf()",
+                    ".contains()",
+                    ".includes()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "category": "Stop Boolean me!",
+        "questions": [
+            {
+                "q": "This operator swaps truthiness of a Boolean",
+                "correct": "!",
+                "options": [
+                    "!",
+                    "!!",
+                    "?",
+                    "||"
+                ]
+            },
+            {
+                "q": "Which of these methods does NOT return a Boolean?",
+                "correct": ".match()",
+                "options": [
+                    ".endsWith()",
+                    ".match()",
+                    ".contains()",
+                    ".every()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "category": "No flex zone",
+        "questions": [
+            {
+                "q": "We need one item in a flexbox to be larger than the others, which property do we change?",
+                "correct": "flex-start",
+                "options": [
+                    "flex-wrap",
+                    "flex-start",
+                    "flex-grow",
+                    "flex-basis"
+                ]
+            },
+            {
+                "q": "The value used to invert cross-start and cross-end in a flex is what?",
+                "correct": "wrap-reverse",
+                "options": [
+                    "row-reverse",
+                    "wrap-reverse",
+                    "column-reverse",
+                    "flex-flow"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "category": "Undefined Flying Objects",
+        "questions": [
+            {
+                "q": "Looping through an object can be a challenge, but we can iterate over enumerable, non-symbols properties like this...",
+                "correct": "for...in",
+                "options": [
+                    ".map()",
+                    ".forEach()",
+                    "for...in",
+                    "for...of"
+                ]
+            },
+            {
+                "q": "If an object method needs to access properties within that object, what keyword is used?",
+                "correct":"this",
+                "options": [
+                    "this",
+                    "in",
+                    "prototype",
+                    "with"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "category": "Array of sunshine",
+        "questions": [
+            {
+                "q": "'.filter(), for...of, .reduce(), while, .values()' \n\n These are all examples of what?",
+                "correct": "iterators",
+                "options": [
+                    "iterators",
+                    "functions",
+                    "operators",
+                    "loopers"
+                ]
+            },
+            {
+                "q": "What datatypes can be held within an Array?",
+                "correct": "all of these",
+                "options": [
+                    "strings",
+                    "symbols",
+                    "all of these",
+                    "objects"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "category": "You're not my type",
+        "questions": [
+            {
+                "q": "Which method does not use the same datatype as the others?",
+                "correct": ".replace()",
+                "options": [
+                    ".reverse()",
+                    ".sort()",
+                    ".fill()",
+                    ".replace()"
+                ]
+            },
+            {
+                "q": "When trying to return a random integer, what object is used?",
+                "correct": "Math",
+                "options": [
+                    "Number",
+                    "BigInt",
+                    "Math",
+                    "Function"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "category": "Going out in style",
+        "questions": [
+            {
+                "q": "Upon hovering the mouse over a div it moves up and to the right away from your mouse. What function caused this?",
+                "correct": "translate()",
+                "options": [
+                    "transition()",
+                    "translate()",
+                    "move()",
+                    "transform()"
+                ]
+            },
+            {
+                "q": "After submitting a popover form, it slowly fades away until it is completely gone from sight. How did that happen?",
+                "correct": "opacity",
+                "options": [
+                    "opacity",
+                    "offset",
+                    "filter",
+                    "display"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "category": "South of the Border",
+        "questions": [
+            {
+                "q": "A paragraph inside a div is too close to the edge, which property would increase the space between the content and it border?",
+                "correct": "padding",
+                "options": [
+                    "gap",
+                    "margin",
+                    "padding",
+                    "box-sizing"
+                ]
+            },
+            {
+                "q": "Which property causes and element's height and width to include the border and the padding?",
+                "correct": "border-box",
+                "options": [
+                    "border-block",
+                    "border-radius",
+                    "border-box",
+                    "border-width"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "category": "Give it to Mikey, he'll eat anything",
+        "questions": [
+            {
+                "q": "Which CSS selector is used to access the direct children of an element?",
+                "correct": ">",
+                "options": [
+                    ">",
+                    "::",
+                    "[]",
+                    ","
+                ]
+            },
+            {
+                "q": "This pseudo-class uses a relative selector list to match an element anchored to the preceeding element.",
+                "correct": ":has()",
+                "options": [
+                    ":dir()",
+                    ":has()",
+                    ":is()",
+                    ":where()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "category": "Going off the grid",
+        "questions": [
+            {
+                "q": "A commonly used grid layout usually containing a header, footer, and a sidebar or aside.",
+                "correct": "Holy Grail",
+                "options": [
+                    "3-Column",
+                    "Masonry",
+                    "Holy Grail",
+                    "Legacy"
+                ]
+            },
+            {
+                "q": "Which property do I use control the auto-placement algorithm to squeeze items into a grid?",
+                "correct": "grid-auto-flow",
+                "options": [
+                    "grid-auto-columns",
+                    "grid-auto-flow",
+                    "grid-auto-areas",
+                    "grid-auto-rows"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "category": "Everything but the kitchen async",
+        "questions": [
+            {
+                "q": "What kind of async function can accept a routing path as an argument to return the proper resources?",
+                "correct": "loader",
+                "options": [
+                    "get",
+                    "useParams",
+                    "fetcher",
+                    "loader"
+                ]
+            },
+            {
+                "q": "If your promise is rejected, which async specific operator will throw the rejected value?",
+                "correct": "await",
+                "options": [
+                    "await",
+                    "request",
+                    "resolve",
+                    "response"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "category": "RegExp marks the spot",
+        "questions": [
+            {
+                "q": "This classification of Regular Expression uses parentheses to define a pattern.",
+                "correct": "capture groups",
+                "options": [
+                    "character classes",
+                    "quantifiers",
+                    "capture groups",
+                    "escaped characters"
+                ]
+            },
+            {
+                "q": "One of these methods returns an array with the characters that are found in the RegExp pattern, or null if none are found.",
+                "correct": ".match()",
+                "options": [
+                    ".test()",
+                    ".replace()",
+                    ".match()",
+                    ".exec()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "category": "Hook, Line, & Sinker",
+        "questions": [
+            {
+                "q": "How do you share state managed by one component with child routes?",
+                "correct": "useOutletContext()",
+                "options": [
+                    "useOutletContext()",
+                    "useEffect()",
+                    "useContext()",
+                    "useParams()"
+                ]
+            },
+            {
+                "q": "The hook that is always an object with a single mutable property is...",
+                "correct": "useRef()",
+                "options": [
+                    "useRef()",
+                    "useId()",
+                    "useState()",
+                    "useMemo()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "category": "No strings attached",
+        "questions": [
+            {
+                "q": "What allows string interpolation to substitute placeholders, opposed to concatenation?",
+                "correct": "template literals",
+                "options": [
+                    "lexical grammar",
+                    "template literals",
+                    "String objects",
+                    "lexical analysis"
+                ]
+            },
+            {
+                "q": "All these methods do similar things, but they all take different arguments. Which one uses start and length, where negative numbers are swapped places to still return a string?",
+                "correct": ".substring()",
+                "options": [
+                    ".slice()",
+                    ".substr()",
+                    ".splice()",
+                    ".substring()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "category": "Scope on a Rope",
+        "questions": [
+            {
+                "q": "If a variable is only available within a pair of curly braces, it has this type of scope...",
+                "correct": "block",
+                "options": [
+                    "global",
+                    "module",
+                    "function",
+                    "block"
+                ]
+            },
+            {
+                "q": "Scope is good for security by hiding data deeply in nested functions, what's this called?",
+                "correct": "closure",
+                "options": [
+                    "closure",
+                    "burying",
+                    "private",
+                    "chaining"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "category": "Function Junction, what's your function?",
+        "questions": [
+            {
+                "q": "A global function that executes a block of code after a set amount of time.",
+                "correct": "setTimeout()",
+                "options": [
+                    "setTimer()",
+                    "setTimeout()",
+                    "setInterval()",
+                    "Number()"
+                ]
+            },
+            {
+                "q": "My function takes in a non-decimal number, but all I have are strings. What can I use to convert my data?",
+                "correct": "parseInt()",
+                "options": [
+                    "isNaN()",
+                    "parseFloat()",
+                    "parseInt()",
+                    "Math()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "category": "Stay classy, San Diego",
+        "questions": [
+            {
+                "q": "When creating a custom JS object class, how do we create its properties?",
+                "correct": "constructor()",
+                "options": [
+                    "set",
+                    "const",
+                    "super()",
+                    "constructor()"
+                ]
+            },
+            {
+                "q": "Using the class selector, how do we target the following element?\n\n<p class='info'>Lorem ipsum dolor sit amet.</p>",
+                "correct": ".info",
+                "options": [
+                    "#info",
+                    ",info",
+                    ".info",
+                    ".p"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "category": "There's a method to my madness",
+        "questions": [
+            {
+                "q": "Objects inherit information from its creation stored as properties and methods. What's the information called?",
+                "correct": "prototype",
+                "options": [
+                    "instance",
+                    "prototype",
+                    "inheritance",
+                    "constructor"
+                ]
+            },
+            {
+                "q": "In class syntax, we can use the '#' to prevent the information from being referenced outside the class. What are they called?",
+                "correct": "private",
+                "options": [
+                    "private",
+                    "prototypical",
+                    "hidden",
+                    "encapsulation"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "category": "If and, or else...",
+        "questions": [
+            {
+                "q": "I want two conditions to be met within my 'if (condition)'. Which operator should I use?",
+                "correct": "&&",
+                "options": [
+                    "||",
+                    "=",
+                    "&&",
+                    "&"
+                ]
+            },
+            {
+                "q": "Instead of writing multiple 'if...else' statements based on the value of the same expression, I prefer to use this",
+                "correct": "switch",
+                "options": [
+                    "try...catch",
+                    "switch",
+                    "do...while",
+                    "case"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "category": "A null state of mind",
+        "questions": [
+            {
+                "q": "My component's state is an array and I need to remove an item without mutating the data. What's the best way to handle this?",
+                "correct": ".filter()",
+                "options": [
+                    ".map()",
+                    ".pop()",
+                    ".splice()",
+                    ".filter()"
+                ]
+            },
+            {
+                "q": "If you find yourself using multiple events to update the same state, what other hook can replace useState()?",
+                "correct": "useReducer()",
+                "options": [
+                    "useReducer()",
+                    "useEffect()",
+                    "useRef()",
+                    "useCallback()"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "category": "Just passing through",
+        "questions": [
+            {
+                "q": "After creating context to be available throughout my app, what do I use to pass this information down my tree?",
+                "correct": "provider",
+                "options": [
+                    "props",
+                    "provider",
+                    "export",
+                    "consumer"
+                ]
+            },
+            {
+                "q": "How do you provide specific data to one pure component when making multiple by using .map()?",
+                "correct": "props",
+                "options": [
+                    "attributes",
+                    "context",
+                    "props",
+                    "rendering"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "category": "What's up, Doc?",
+        "questions": [
+            {
+                "q": "React will only commit the changes by comparing the past render to what before the re-render?",
+                "correct": "VDOM",
+                "options": [
+                    "DOM",
+                    "VDOM",
+                    "BOM",
+                    "RDOM"
+                ]
+            },
+            {
+                "q": "To add a newly created element to the DOM at the top of a designated container, what method is used?",
+                "correct": ".prepend()",
+                "options": [
+                    ".prepend()",
+                    ".append()",
+                    ".appendChild()",
+                    ".place()"
+                ]
+            }
+        ]
+    }
+]

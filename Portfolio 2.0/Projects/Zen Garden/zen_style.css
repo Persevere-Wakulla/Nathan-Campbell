@@ -1,0 +1,234 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper{
+    background-color: navy;
+    display:grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: repeat (3,auto);
+}
+
+h1{
+    border-bottom: 2px solid gold;
+}
+
+.intro {
+    background-color: rgba(240, 248, 255, 0.541);
+    margin: auto;
+    padding:1rem;
+    width: 75%;
+    margin-bottom: 1rem;
+    grid-column:2/3;
+    grid-row:1;
+    border-radius:15px;
+}
+
+
+#wheel {
+    display: block;
+    width:70%;
+    margin:auto;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+   0% {
+    transform:rotate(-360deg);
+   }
+}
+
+h1, h2, h3 {
+    font-family: Impact;
+    color: rgb(39, 47, 160);
+    text-shadow: 3px 2px 1px gold;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size:64px;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size:36px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p, a {
+    font-family: 'Lucida Sans Unicode';
+    color: aliceblue;
+}
+
+.preamble {
+    margin-top: 1rem;
+
+}
+
+
+.main {
+    width:90%;
+    margin:auto;
+    grid-row:2;
+    grid-column:2;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+
+.main>div {
+    background-color: rgba(240, 248, 255, 0.541);
+    border-radius: 15px;
+}
+
+.extra1 {
+    background-color: rgb(39, 47, 160);
+    grid-column:3;
+    grid-row: 1/4;
+}
+.supporting {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap:20px;
+}
+
+.explanation, .benefits, .participation, .requirements {
+    perspective:400px;
+    padding:1rem;
+}
+
+.explanation div {
+    margin-top: 2rem;
+    transform: translateX(-800px) rotateZ(-360deg);
+}
+
+.explanation:hover div {
+    transform: translateX(0);
+    transition: transform 2s;
+}
+
+.participation div {
+    transform: translateZ(-2500px) rotateX(360deg);
+}
+
+.participation:hover div {
+    transform: translateZ(0) rotateX(0);
+    transition: transform 2.4s;
+}
+
+.benefits div {
+    margin-top: 2rem;
+    transform:translateX(800px) rotateZ(360deg);
+}
+
+.benefits:hover div {
+    transform: translateX(0);
+    transition: transform 2s;
+}
+
+.requirements {
+    width:75%;
+    margin:0 auto;
+    grid-row:2/3;
+    grid-column:1/4;
+}
+
+.requirements div {
+    transform: translateZ(-2500px) rotateY(360deg);
+}
+
+.requirements:hover div {
+    transform: translateZ(0) rotateY(0);
+    transition: transform 2.4s;
+}
+
+footer {
+    grid-column:1/4;
+    display:flex;
+    justify-content: center;
+    gap:5%;
+}
+
+footer a {
+    font-size:30px;
+    background-color:rgb(158, 190, 218);
+    color:navy;
+    padding:.1rem .5rem;
+    border-radius:20px;
+}
+
+.sidebar {
+    background-color: rgb(39, 47, 160);
+    grid-column:1;
+    grid-row:1/4;
+}
+
+.arrow {
+    position: fixed;
+    left:-15px;
+    top:45%;
+}
+
+li{
+    list-style-type: none;
+    border: 1px solid gold;
+}
+a{
+    text-decoration: none;
+}
+
+*/ .expand {
+    position: relative;
+    display: inline-block;
+}
+
+.expand-content {
+    background-color: rgb(158, 190, 218);
+    padding: 1rem;
+    margin-top: 2rem;
+    display: none;
+    position: absolute;
+}
+
+aside:hover .expand-content {
+    transition: 1s;
+    display: inline-block;
+    line-height: 2;
+    z-index: 4;
+}
+aside:hover .expand {
+    width:320px;
+}
+
+aside:hover .arrow{
+    display: none;
+}
+a:hover {
+    color: gold;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px black;
+}
+
+#design-selection {
+    position: fixed;
+    top:5%;
+}
+
+#design-archives {
+    position: fixed;
+    top:40%;
+}
+
+#zen-resources {
+    position: fixed;
+    top: 56%;
+}

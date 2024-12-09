@@ -1,0 +1,209 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* root */
+:root {
+    /* colors */
+    --table: hsl(125, 70%, 25%);
+    --main-ft: hsl(200, 60%, 90%);
+    --head-ft: hsl(200, 67%, 26%);
+    --game-btn: hsl(280, 60%, 20%);
+    --non-btn: hsl(280, 25%, 40%);
+    --plus-btn: hsl(190, 75%, 60%);
+    --min-btn: hsl(0, 50%, 55%);
+    --bank: hsl(201, 13%, 51%);
+    --faded: rgba(13, 64, 89, 0.753);
+    --shadow: rgb(46, 46, 85);
+
+    /* font */
+    --family: Helvetica;
+    --big: 1.6rem;
+    --bold: 600;
+}
+
+/* general */
+body,
+button {
+    color: var(--main-ft);
+    font-family: var(--family);
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(152, 152, 158);
+    padding: 2rem;
+}
+
+/* utility */
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.space {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.big {
+    font-size: var(--big);
+}
+
+.bold {
+    font-weight: var(--bold);
+}
+
+/* header */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--head-ft);
+}
+
+/* table */
+#table {
+    padding: 1rem;
+    background-color: var(--table);
+    width: 70%;
+    margin: auto;
+    border-radius: 20%;
+    text-align: center;
+    border: 5px solid rgb(28, 31, 51);
+    box-shadow: inset 0 3px 3px var(--shadow), 0 3px 3px var(--shadow);
+}
+
+/* card containers */
+.scene{
+    perspective: 400px;
+}
+
+.card {
+    height: 205px;
+    width: 140px;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card_face {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+.back {
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(138, 9, 31);
+    background-image: url('./moon-svgrepo-com\(1\).svg');
+    background-size: 10%;
+    border: 2px solid rgb(247, 224, 224);
+}
+
+.design {
+    height: 188px;
+    width: 112px;
+    border: 2px solid rgb(247, 224, 224);
+    border-radius: 5px;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+/* pot */
+#pot {
+    margin-right: 2rem;
+}
+
+/* bank */
+.bank {
+    color: var(--head-ft);
+    margin: auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 50%;
+    background-color: var(--bank);
+    box-shadow: inset 0 3px 3px rgb(139, 147, 156), 0 3px 3px var(--shadow);
+}
+
+/* buttons */
+button {
+    border-style: none;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+.game-btn {
+    font-size: 1rem;
+    background-color: var(--game-btn);
+    box-shadow: inset 0 2px 3px rgb(100, 9, 160), 0 2px 3px var(--shadow);
+}
+
+.bank-btn {
+    background-color: var(--main-ft);
+    font-size: var(--big);
+    box-shadow: inset 0 2px 3px rgb(234, 235, 238), 0 2px 3px var(--shadow);
+
+}
+
+.non-btn {
+    background-color: var(--non-btn);
+}
+
+#place {
+    color: var(--game-btn);
+}
+
+#plus {
+    color: var(--plus-btn);
+}
+
+#minus {
+    color: var(--min-btn);
+}
+
+#play-game {
+    font-size: 3rem;
+    font-weight: var(--bold);
+    padding: 1.5rem 3rem;
+    background-color: var(--game-btn);
+}
+
+#deck {
+    box-shadow: 0 2px 2px var(--shadow);
+
+}
+
+#start {
+    font-size: var(--big);
+    font-weight: var(--bold);
+    padding: 2rem 1.4rem;
+}
+
+/* footer */
+#copy {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--head-ft);
+}

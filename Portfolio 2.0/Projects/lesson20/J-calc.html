@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-calc v1.0.2</title>
+    <link rel="stylesheet" href="./j-style.css">
+</head>
+
+<body>
+    <h1>J-calc v1.0.2</h1>
+    <main class="contain">
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td colspan="4" id="results"></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="return addDigit(1)">1</a></td>
+                    <td><a href="#" onclick="return addDigit(2)">2</a></td>
+                    <td><a href="#" onclick="return addDigit(3)">3</a></td>
+                    <td><a href="#" onclick="return addDigit('+')">+</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="return addDigit(4)">4</a></td>
+                    <td><a href="#" onclick="return addDigit(5)">5</a></td>
+                    <td><a href="#" onclick="return addDigit(6)">6</a></td>
+                    <td><a href="#" onclick="return addDigit('-')">-</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="return addDigit(7)">7</a></td>
+                    <td><a href="#" onclick="return addDigit(8)">8</a></td>
+                    <td><a href="#" onclick="return addDigit(9)">9</a></td>
+                    <td><a href="#" onclick="return addDigit('*')">x</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="return reset()">Clear</a></td>
+                    <td><a href="#" onclick="return addDigit(0)">0</a></td>
+                    <td><a href="#" onclick="return calculate()">=</a></td>
+                    <td><a href="#" onclick="return addDigit('/')">/</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- controls onclicks
+        you can use it externally or copy it below -->
+        <script src="eventUtility.js"></script>
+        <script>
+            // adds the number value to the display
+            function addDigit(digit) {
+                var resultField = document.getElementById("results");
+
+                resultField.innerHTML += digit;
+
+                return false;
+            }
+            // does the mathematical operator when you hit equals
+            function calculate() {
+                var resultField = document.getElementById("results");
+
+                resultField.innerHTML = eval(resultField.innerHTML);
+
+                return false;
+            }
+            // clears the display
+            function reset() {
+                var resultField = document.getElementById("results");
+
+                resultField.innerHTML = "";
+
+                return false;
+            }
+            // sets the eventUtility to the proper values
+            onload = function () {
+                var links = document.getElementsByTagName("a");
+                var length = links.length;
+
+                for (var i = 0; i < length; i++) {
+                    var link = links[i];
+                    var innerHTML = link.innerHTML;
+                    var func = null;
+
+                    switch (innerHTML) {
+                        case "Clear":
+                            func = reset;
+                            break;
+
+                        case "=":
+                            func = calculate;
+                            break;
+
+                        default:
+                            func = getHandlerFunction(innerHTML);
+                    }
+
+                    eventUtility.addEvent(link, "click", func);
+                }
+            };
+        </script>
+    </main>
+</body>
+
+</html>

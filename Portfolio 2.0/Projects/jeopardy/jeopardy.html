@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jeopardy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./jeopardy.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="title">This is Jeopardy!</h1>
+    </header>
+
+    <main id="main">
+        <form action="continue">
+            <fieldset>
+                <legend>Options</legend>
+                <div class="flex">
+                    <div>
+                        <h2>Rounds</h2>
+                        <div class="flex" id="rounds">
+                            <div>
+                                <input type="radio" id="round1" name="rounds">
+                                <label for="one">1</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="round2" name="rounds" checked>
+                                <label for="two">2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Final</h2>
+                        <div class="flex" id="final">
+                            <input type="radio" id="y" name="final" checked>
+                            <label for="y">Yes</label>
+                            <input type="radio" id="n" name="final">
+                            <label for="n">No</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Teams</legend>
+                <div class="flex">
+                    <div>
+                        <h2>Names</h2>
+                        <label for="first">Team 1</label>
+                        <input type="text" id="first">
+                        <br>
+                        <label for="second">Team 2</label>
+                        <input type="text" id="second">
+                        <br>
+                        <label for="third">Team 3</label>
+                        <input type="text" id="third">
+                    </div>
+                    <div>
+                        <p id="pick"></p>
+                        <button type="button" class="lil-btn" id="choice">First Turn</button>
+                    </div>
+                </div>
+            </fieldset>
+            <br><br>
+            <button type="submit" class="lil-btn" id="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer class="sticky">
+        <article class="score-board" id="divOne">
+            <p class="team-name">Choose</p>
+            <p class="container">$<span class="score"></span></p>
+        </article>
+        <article class="score-board" id="divTwo">
+            <p class="team-name">Team</p>
+            <p class="container">$<span class="score"></span></p>
+        </article>
+        <article class="score-board" id="divThree">
+            <p class="team-name">Names</p>
+            <p class="container">$<span class="score"></span></p>
+        </article>
+    </footer>
+    <script type="module" src="./jeopardy.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* root variables */
+:root {
+    /* background */
+    --backing: linear-gradient(rgb(128, 155, 178), rgb(68, 69, 70), rgb(68, 69, 70), rgb(128, 155, 178));
+
+    /* containers */
+    --inset: rgb(105, 121, 134);
+    --shade: rgb(18, 22, 24);
+
+    /* fonts */
+    --main-text: aliceblue;
+    --sec-text: rgb(67, 79, 90);
+    --heads: Tahoma;
+    --code: rgb(25, 231, 25);
+    --font: 'Lucida Sans Unicode';
+    --bold: 700;
+
+    /* multi-use */
+    --input: #dfdbc3;
+    --warning: #f6d51c;
+    --hover: rgb(191, 6, 132);
+    --glow: rgb(48, 205, 244);
+    --btn-ins: rgb(70, 212, 247);
+    --hover-ins: rgb(189, 52, 146);
+
+    /* sizing and spacing */
+    --xl: 6rem;
+    --lg: 3rem;
+    --md: 1.5rem;
+    --sm: 1rem;
+    --lg-w: 75%;
+    --md-w: 50%;
+    --sm-w: 25%;
+
+    /* borders */
+    --radii: .5rem;
+}
+
+#root {
+    background: var(--backing);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+body {
+    font-family: var(--font);
+}
+
+header,
+footer,
+.qBox {
+    padding: var(--sm);
+    box-shadow: 0 3px 3px var(--shade);
+}
+
+header {
+    background: linear-gradient(rgb(69, 5, 48), rgb(154, 12, 109));
+}
+
+footer {
+    background: linear-gradient(rgb(154, 12, 109), rgb(69, 5, 48));
+    width: 300px;
+    margin: auto;
+    border-radius: var(--radii);
+    text-align: center;
+    font-size: var(--md);
+    position: fixed;
+    bottom: 10px;
+}
+
+.qBox {
+    background: rgba(154, 12, 109, 0.334);
+    border-radius: var(--radii);
+}
+
+#user-name,
+#user-score {
+    color: var(--main-text);
+    text-shadow: 0 2px 2px var(--shade);
+}
+
+#user-score {
+    font-size: var(--lg);
+}
+
+.brand,
+.title {
+    color: var(--main-text);
+    font-size: var(--lg);
+    font-family: var(--heads);
+    text-shadow: 0 3px 3px var(--shade);
+}
+
+.symbol {
+    width: 100%;
+}
+
+.img-box {
+    width: 20%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.big {
+    width: 600px;
+    height: 400px;
+    border-radius: var(--md-w);
+    margin: var(--xl) auto;
+    background-color: rgba(177, 5, 122, 0.395);
+    background-image: url('/react-icon.png');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+}
+
+.root-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--xl);
+}
+
+.top {
+    font-size: var(--xl);
+    font-family: var(--heads);
+    color: var(--main-text);
+    text-shadow: 0 4px 4px var(--shade);
+}
+
+.register {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: var(--md);
+}
+
+input {
+    font-size: var(--md);
+    border-radius: var(--radii);
+    background-color: var(--input);
+}
+
+.name,
+.active {
+    color: var(--glow);
+    font-size: var(--lg);
+    font-family: var(--heads);
+    font-weight: var(--bold);
+    text-shadow: 0 3px 3px var(--shade);
+}
+
+button {
+    padding: var(--sm);
+    background-color: var(--glow);
+    color: var(--sec-text);
+    font-size: var(--md);
+    font-family: var(--font);
+    font-weight: var(--bold);
+    box-shadow: 0 2px 2px var(--shade), inset 0 2px 2px var(--btn-ins);
+    border: 1px solid var(--sec-text);
+    border-radius: var(--radii);
+}
+
+button:hover {
+    background-color: var(--hover);
+    color: var(--main-text);
+    box-shadow: 0 2px 2px var(--shade), inset 0 2px 2px var(--hover-ins);
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+}
+
+.cat-btn {
+    background-color: var(--shade);
+    color: var(--main-text);
+    font-size: var(--lg);
+    padding: var(--sm);
+    border-radius: var(--radii);
+    text-align: center;
+}
+
+.cat-btn:hover {
+    color: var(--warning);
+    cursor: pointer;
+}
+
+.answers {
+    margin-top: var(--md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+}
+
+.answer:hover {
+    cursor: pointer;
+}
+
+.bank {
+    float: right;
+    font-size: var(--md);
+    background-color: var(--main-text);
+    color: var(--sec-text);
+    border-radius: var(--radii);
+    font-weight: var(--bold);
+    padding: var(--sm);
+}
+
+.blanks {
+    margin-top: var(--md);
+    border-radius: var(--radii);
+    padding: var(--md);
+    background: var(--shade);
+}
+
+pre>input:focus {
+    background-color: var(--warning);
+}
+
+.direct {
+    color: var(--main-text);
+}
+
+.details {
+    color: var(--code);
+    font-size: var(--sm);
+}
+
+.submit {
+    display: block;
+    margin: auto;
+    margin-top: var(--md);
+}
+
+.results {
+    text-align: center;
+}
+
+.results>h1 {
+    font-size: var(--lg);
+    text-shadow: 0 2px 2px var(--shade);
+}
+
+.end-name {
+    font-size: var(--md);
+    color: var(--main-text);
+    text-shadow: 0 2px 2px var(--shade);
+}
+
+.end-score {
+    font-size: var(--lg);
+    color: var(--glow);
+    text-shadow: 0 2px 2px var(--shade);
+}
+
+.win {
+    color: var(--glow);
+}
+
+.ok {
+    color: var(--main-text);
+}
+
+.lose {
+    color: var(--warning);
+}
+
+.buttons {
+    margin-top: var(--md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:var(--md);
+}

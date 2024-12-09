@@ -1,0 +1,324 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Text: hsl(229, 25%, 31%);
+    --Score-Text: hsl(229, 64%, 46%);
+    --Header-Outline: hsl(217, 16%, 45%);
+    --Font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* wrapper */
+#page-wrap {
+    padding: 2rem;
+    margin: auto;
+    max-width: 750px;
+}
+
+/* background */
+body {
+    height: 100vh;
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--Font);
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+
+/* header */
+#flex {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(183, 195, 206);
+    border-radius: 20px;
+    padding: 1.4rem;
+    margin-bottom: 5rem;
+}
+
+/* options */
+#col {
+    display:flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* scoreboard */
+#score {
+    background-color: white;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#number {
+    margin-top: .5rem;
+    color: var(--Dark-Text);
+    font-size: 4rem;
+}
+
+
+/* main */
+main {
+    height: 100vh;
+}
+
+/* pentagon */
+#bg-pic {
+    width: 24rem;
+    margin: auto;
+    position: relative;
+    left: 0px;
+}
+
+/* classes */
+/* fonts */
+.caps {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: var(--Dark-Text);
+}
+
+.large {
+    font-size: 2rem;
+}
+
+/* button */
+.circle {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1.4rem;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: inset 0 5px 5px hsla(0, 0%, 0%, 0.3), 0 6px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+/* step2 grid */
+#step2{
+    display: none;
+}
+
+.grid {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 2rem;
+}
+
+#play-area {
+    grid-column: 1;
+}
+
+#player-choice,
+#cpu-choice {
+    grid-row: 2;
+}
+
+#cpu-area {
+    grid-column: 3;
+}
+/* step2 */
+#player,
+#cpu {
+    display: none;
+    grid-row: 1;
+}
+
+#winner,
+#loser {
+    display: none;
+}
+
+/* step3 */
+#win-or-lose {
+    display:none;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* math placement */
+/* i refuse to use "magic number" positioning, so i found another way */
+/* css-tricks clock was the inspiration */
+/* almost copy & paste, but with a few minor adjustments */
+/* basic circle */
+#pentagon {
+    margin: auto;
+    --_ow: clamp(5rem, 50vw, 25rem);
+    --_w: 90%;
+    --_r: calc(var(--_w) / 2);
+    height: var(--_ow);
+    position: relative;
+    width: var(--_ow);
+}
+
+/* math to find x and y positions */
+#placement div {
+    --_x: calc(var(--_r) + (var(--_r) * cos(var(--_d))) - 50px);
+    --_y: calc(var(--_r) + (var(--_r) * sin(var(--_d))) - 20px);
+    --_sz: 8rem;
+    height: var(--_sz);
+    left: var(--_x);
+    position: absolute;
+    top: var(--_y);
+    width: var(--_sz);
+}
+
+/* individual placements and borders */
+.scissor {
+    border: 12px solid hsl(39, 89%, 49%);
+    --_d: 270deg;
+}
+
+.paper {
+    border: 12px solid hsl(230, 89%, 62%);
+    --_d: 340deg;
+}
+
+.rock {
+    border: 12px solid hsl(349, 71%, 52%);
+    --_d: 52deg;
+}
+
+.lizard {
+    border: 12px solid hsl(261, 73%, 60%);
+    --_d: 130deg
+}
+
+.spock {
+    border: 12px solid hsl(189, 59%, 53%);
+    --_d: 200deg;
+}
+
+/* button */
+#again {
+    display: none;
+    color: var(--Dark-Text);
+    background-color: rgb(183, 195, 206);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: inset 0 3px 0 rgb(202, 216, 230), 0 3px 0 rgb(64, 74, 83);
+}
+
+
+/* footer */
+footer {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* rules */
+#rule-sheet {
+    position: absolute;
+    top: 400px;
+    right: 24%;
+    z-index: 2;
+}
+
+#rules {
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 2rem;
+    border: 3px solid rgb(183, 195, 206);
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    width: 20%;
+    margin: auto;
+}
+
+/* hover transition */
+#perspective {
+    perspective: 500px;
+}
+
+#perspective:hover #rule-sheet {
+    transform: translateY(-1100px);
+    transition: transform 1s ease-in-out;
+}
+
+/* animations */
+/* winner */
+.wins{
+    animation: jump .5s linear 3s infinite; 
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* loser */
+.loses {
+    animation: fall 5s linear 3s;
+}
+
+@keyframes fall{
+    0% {
+        transform: rotateY(0deg);
+    }
+    5% {
+        transform: skewX(20deg);
+    }
+    10% {
+        transform: skewX(-20deg);
+    }
+    20% {
+        transform: skewX(20deg);
+    }
+    25% {
+        transform: skewX(-20deg);
+    }
+    60% {
+        transform:rotateY(180deg);
+    }
+    80% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+
+/* tie */
+.tie {
+    animation: tie 5s linear 3s;
+}
+
+@keyframes tie {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack Table</title>
+    <!-- my styles -->
+    <link rel="stylesheet" href="./blackJack.css">
+</head>
+
+<!-- body -->
+<body>
+
+    <!-- main -->
+    <main>
+
+        <!-- table -->
+        <section id="table" class="column">
+            <!-- dealer's side -->
+            <section class="column" id="deal">
+                <!-- dealer's side -->
+                <p class="big bold">Dealer</p>
+                <article class="play-area flex" id="dealer">
+                </article>
+            </section>
+
+            <!-- center for deck and pot -->
+            <section id="center" class="flex space">
+                <div class="card" id="deck">
+                    <div class="back flipped">
+                        <div class="design"></div>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="start" class="game-btn">Deal</button>
+                </div>
+                <div class="column">
+                    <p class="big bold">$ <span id="pot"></span>
+                    </p>
+                </div>
+            </section>
+
+            <h2 class="big bold" id="message"></h2>
+
+            <!-- player's side -->
+            <section id="player" class="column">
+                <article class="play-area flex" id="play">
+                </article>
+                <p class="big bold" id="user">Player</p>
+
+                <article id="btns" class="btns">
+                    <button type="button" class="game-btn" id="hit">HIT</button>
+                    <button type="button" class="game-btn" id="stay">STAY</button>
+                    <button type="button" class="game-btn" id="dbl-down">DBL DOWN</button>
+                    <button type="button" class="game-btn" id="split">SPLIT</button>
+                </article>
+            </section>
+
+            <!-- bank -->
+            <article class="bank">
+                <!-- amount owned -->
+                <p class="big bold">You have $<span id="money">2000</span></p>
+                <!-- place bet -->
+                <p class="big bold">Bet: <span id="my-bet"></span></p>
+                <!-- place bet -->
+                <button type="button" class="bank-btn" id="place">Place Bet</button>
+                <br>
+                <!-- add -->
+                <button type="button" class="bank-btn" id="plus">+</button>
+                <!-- subtract -->
+                <button type="button" class="bank-btn" id="minus">-</button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p id="copy">created by S_Kimo Studios &copy; 2024</p>
+    </footer>
+
+    <!-- myJS -->
+    <!-- <script src="./blackJack.js"></script> -->
+    <script src="./blackJack-refactor.js"></script>
+</body>
+
+</html>
